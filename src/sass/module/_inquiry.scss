@@ -1,5 +1,23 @@
 @use "global" as *;
 
+.inquiry{
+    position: relative;
+}
+
+.inquiry__top-bg{
+    background-image: url(../images/common/footprints1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-150);
+    right: calc(50% - min(48%, rem(540)));
+    width: rem(71);
+    /* height指定しないと表示されないので、ここは指定する */
+    height: rem(162);
+}
+
 .inquiry__contact{
     text-align: center;
     margin-top: rem(100);
@@ -22,6 +40,10 @@
     }
 }
 
+.inquiry__button p{
+    letter-spacing: 0.1em;
+}
+
 .inquiry__button-push{
     margin-top: rem(20);
     @include mq(md){
@@ -30,5 +52,9 @@
 }
 
 .inquiry__bg{
-
+    background-image: url(../images/common/footer_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem(300);
 }
