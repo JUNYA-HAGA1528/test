@@ -1,20 +1,23 @@
 @use "global" as *;
 
 .reason{
-    background-image: url(../images/common/bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: rem(122) 0;
+    padding: rem(100) 0;
+    @include mq(md){
+        background-image: url(../images/common/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: rem(122) 0;
+    }
 }
 
 .reason__inner{
-    max-width: rem(500);
+    max-width: $max-width;
 }
 
 .reason__list{
     text-align: center;
-    margin-top: rem(100);
+    margin-top: rem(80);
     @include mq(md){
         margin-top: rem(150);
     }

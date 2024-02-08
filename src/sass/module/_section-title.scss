@@ -31,7 +31,13 @@
     }
 } 
 
+.section-title__text--white{
+    color: $white;
+}
 
+.section-title__text--white::after {
+    background-color: $white;
+} 
 
 
 

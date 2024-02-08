@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.strengths{
+    margin-top: rem(200);
+    background-color: $green;
+    padding: rem(100) 0;
+    color: $white;
+}
+
+.strengths__inner{
+    max-width: $max-width;
+}
+
+.strengths__list{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(150);
+    }
+}
+
+.strengths-card__img {
+    filter: brightness(0.5);
+    position: relative;
+    @include mq(md){
+        width: 50%;
+    }
+}
+
+.strengths-card__img:hover {
+    filter: brightness(1);
+    transition: 0.3s;
+}
+
+.strengths-card__img img{
+    aspect-ratio: 345/227;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @include mq(md){
+        aspect-ratio: 540/356;
+    }
+}
+
+.strengths-card__subtitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white; // テキストの色を白に設定
+}
+
+
+.strengths-card__content{
+    margin-top: rem(24);
+    @include mq(md){
+        margin-left: rem(48);
+        width: 45.6%;
+    }
+}
+
+.strengths-card__text{
+    margin-top: rem(8);
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: calc(24/16);
+}
