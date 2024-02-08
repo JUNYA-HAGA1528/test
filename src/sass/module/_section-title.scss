@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.section-title{
+	text-align: center;
+}
+
+.section-title__text{
+    position: relative;
+	font-size: rem(24);
+	font-weight: 900;
+    font-family: $second-font-family;
+	line-height: calc(40/32);
+    letter-spacing: 0.08em;
+    @include mq(md){
+        font-size: rem(40);
+        line-height: calc(1);
+    }
+}
+
+.section-title__text::after {
+    content: "";
+    display: block;
+    height: rem(4);
+    background-color: $black;
+    position: absolute;
+    bottom: rem(-40);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(200);
+  }

@@ -1,0 +1,136 @@
+@use "global" as *;
+
+
+.gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__inner{
+    @include mq(md){
+        max-width: rem(980);
+        margin: auto;
+    }
+}
+
+.gallery__items {
+    display: grid;
+    grid-auto-flow: dense;
+    @include mq("md") {
+        grid-template-columns: repeat(11, 1fr);
+        margin-right: calc(50% - 50vw);
+    }
+}
+  
+.gallery__item:nth-child(3n + 1){
+    grid-row: span 2;
+    @include mq("md") {
+        grid-column: span 8;
+    }
+}
+  
+.gallery__item:nth-child(3n + 2),
+.gallery__item:nth-child(3n + 3){
+    grid-row: span 1;
+    @include mq("md") {
+        grid-column: span 3;
+    }
+}
+  
+.gallery__item img {
+    aspect-ratio: 345 / 219;
+    object-fit: cover;
+    width: 100%;
+    height: rem(400);
+    @include mq("md") {
+        aspect-ratio: 580 / 350;
+        height: 100%;
+    }
+}
+  
+.gallery__item:nth-child(3n + 1) img{
+    aspect-ratio: 1440/768;
+    width: 100%;
+    height: rem(680);
+    object-fit: cover;
+    @include mq(md){
+        height: rem(845);
+    }
+}
+
+.gallery__content{
+    position: absolute;
+    top: 10%; /* 固定 */
+    left: 50%; /* 左端から中央に配置 */
+    transform: translateX(-50%); /* 中央に移動 */
+    text-align: center;
+    @include mq(md){
+        top: rem(150);
+        left: calc(50% - min(50%, rem(790)));
+        transform: translateX(0%);
+        margin: 0 rem(30) 0 rem(110);
+        text-align: left;
+    }
+}
+
+.gallery__title{
+    font-family: $second-font-family;
+    font-size: rem(40);
+    font-weight: 900;
+    line-height: 24/16;
+    letter-spacing: rem(12);
+    @include mq(md){
+        font-size: rem(70);
+        font-weight: 900;
+        letter-spacing: rem(12);
+    }
+}
+
+.gallery__subtitle{
+    background: $black;
+    border: 1px solid $black;
+    color: $white;
+    width: 100%;
+    padding: rem(8) rem(14);
+    font-family: $second-font-family;
+    text-align: center;
+    font-size: rem(22);
+    font-weight: $bold;
+    letter-spacing: 0.13em;
+    @include mq(md){
+        background: $black;
+        border: 1px solid $black;
+        color: $white;
+        width: rem(400);
+        padding: rem(8) rem(24);
+        text-align: center;
+        font-size: rem(30);
+        font-weight: $bold;
+        letter-spacing: 0.16em;
+    }
+}
+
+.gallery__text{
+        margin-top: rem(30);
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: 24/16;
+        text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+                   -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+                    0px 1px 0 #FFF,  0-1px 0 #FFF,
+                   -1px 0 0 #FFF, 1px 0 0 #FFF;
+    @include mq(md){
+        margin-top: rem(74);
+        font-size: rem(26);
+    }
+}
+
+.gallery__text span {
+    color: $green;
+    font-family: $second-font-family;
+    font-size: rem(22);
+    font-weight: 900;
+    @include mq(md){
+        font-size: rem(36);
+    }
+}
