@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.reason-card{
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.reason-card__number{
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    width: rem(40);
+    height: rem(100);
+    background: $green;
+    color: $white;
+    font-size: rem(24);
+    font-weight: $bold;
+    padding-top: rem(20);
+}
+
+.reason-card__body {
+    display: grid;
+    place-items: center;
+    /* 縦方向と横方向の中央揃え */
+    height: 100%;
+    padding: rem(120) rem(56) rem(30);
+    clip-path: polygon(50% 0, 100% rem(105), 100% 100%, 0 100%, 0 rem(105));
+    // background-color: #fff;
+    background-color: green;
+    position: relative;
+    z-index: 100;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: block;
+        z-index: -1;
+        clip-path: polygon(50% 0, 100% rem(100), 100% 100%, 0 100%, 0 rem(100));
+        inset: 10px;
+    }
+}
+
+.reason-card__title {
+    font-family: $second-font-family;
+    color: $green;
+    border-bottom: rem(1) solid $green;
+    font-size: rem(26);
+    font-weight: $bold;
+    line-height: calc(24/16);
+    text-align: center;
+}
+
+.reason-card__subtitle{
+	font-weight: $regular;
+	font-size: rem(20);
+	text-align: center;
+    padding-top: rem(24);
+    line-height: 1.9;
+}

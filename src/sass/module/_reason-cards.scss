@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.reason-cards{
+    @include mq(md){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.reason-cards__item{
+    position: relative;
+    @include mq(md){
+        max-width: calc(33.3333% - 5rem * 2 / 3 );
+        width: 100%;
+    }
+}
+
+.reason-cards__item + .reason-cards__item{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(80);
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.reason-cards__item:nth-child(3n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.reason-cards__item:nth-child(n + 4){
+    @include mq(md){
+        margin-top: 2.5rem;
+    }
+}
