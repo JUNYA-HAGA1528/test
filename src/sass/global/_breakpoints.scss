@@ -31,7 +31,7 @@ $mediaquerys: (
     xl: 1440,
     lg: 1023,
     md: 767,
-    sm: 600,
+    sm: 500,
   );
   $mediaquerys: (
     sm: "screen and (max-width: #{map-get($breakpoints,'sm')}px)",
@@ -49,7 +49,6 @@ $mediaquerys: (
     @content;
   }
 }
-
 
 @if $startFrom == sp {
   //pcで表示

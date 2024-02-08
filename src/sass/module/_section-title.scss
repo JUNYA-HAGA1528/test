@@ -6,14 +6,13 @@
 
 .section-title__text{
     position: relative;
-	font-size: rem(24);
+	font-size: rem(26);
 	font-weight: 900;
     font-family: $second-font-family;
-	line-height: calc(40/32);
+	line-height: 1.5;
     letter-spacing: 0.08em;
     @include mq(md){
         font-size: rem(40);
-        line-height: calc(1);
     }
 }
 
@@ -23,8 +22,22 @@
     height: rem(4);
     background-color: $black;
     position: absolute;
-    bottom: rem(-40);
+    bottom: rem(-20);
     left: 50%;
     transform: translateX(-50%);
     width: rem(200);
-  }
+    @include mq(md){
+        bottom: rem(-40);
+    }
+} 
+
+
+
+
+
+/*---500pxのブレイクポイントで変更したい---*/
+@media screen and (max-width: 550px){
+    .inquiry__break{
+        display: none;
+    }
+}
