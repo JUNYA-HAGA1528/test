@@ -1,9 +1,7 @@
 @use "global" as *;
 
-.design{
-
-}
-
-.design__inner{
-    
+.design__content{
+    @include mq(md){
+        margin-top: rem(100);
+    }
 }

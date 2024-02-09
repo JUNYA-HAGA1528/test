@@ -18,7 +18,7 @@
     height: rem(162);
     @include mq(md){
         top: rem(-280);
-        right: calc(50% - min(48%, rem(730)));
+        right: calc(50% - min(48%, rem(700)));
         width: rem(120);
         /* height指定しないと表示されないので、ここは指定する */
         height: rem(162);
