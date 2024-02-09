@@ -1,15 +1,10 @@
 @use "global" as *;
 
-.strengths-card{
-    position: relative;
-    color: $white;
-}
-
 .strengths-card__flex{
     @include mq(md){
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
     }
 }
 
@@ -29,16 +24,17 @@
 }
 
 .strengths-card__img {
+    filter: brightness(0.5);
     position: relative;
     @include mq(md){
         width: 45%;
     }
 }
 
-// .strengths-card__img:hover {
-//     filter: brightness(1);
-//     transition: 0.3s;
-// }
+.strengths-card__img:hover {
+    filter: brightness(1);
+    transition: 0.3s;
+}
 
 .strengths-card__img img{
     aspect-ratio: 345/227;
@@ -58,16 +54,16 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-shadow: rem(5) rem(5) #bbb;
+    text-shadow: rem(3) rem(3) #bbb;
     font-size: rem(22);
 	font-weight: 900;
     font-family: $second-font-family;
 	line-height: 1.5;
     letter-spacing: 0.08em;
+    white-space: nowrap;
     @include mq(md){
         font-size: rem(40);
         writing-mode: vertical-rl;
-        white-space: nowrap;
     }
 }
 
@@ -75,7 +71,7 @@
     margin-top: rem(24);
     @include mq(md){
         margin-top: 0;
-        margin-left: rem(100);
+        margin-left: rem(70);
         width: 47%;
     }
 }
@@ -85,7 +81,6 @@
     font-size: rem(16);
     font-weight: $regular;
     line-height: calc(32/16);
-    letter-spacing: 0.05em;
     @include mq(md){
         margin-top: 0;
         font-size: rem(20);
