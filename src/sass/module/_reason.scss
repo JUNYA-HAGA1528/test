@@ -2,13 +2,11 @@
 
 .reason{
     padding: rem(100) 0;
-    @include mq(md){
-        background-image: url(../images/common/bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: rem(122) 0;
-    }
+    background-image: url(../images/common/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: rem(122) 0;
 }
 
 .reason__inner{
