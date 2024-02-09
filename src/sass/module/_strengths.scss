@@ -4,10 +4,31 @@
     background-color: $green;
     padding: rem(100) 0;
     color: $white;
+    position: relative;
     @include mq(md){
         padding: rem(200) 0;
     }
 }
+
+.strengths::before {
+    background-image: url(../images/common/tree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-80);
+    left: calc(50% - min(48%, rem(350)));
+    width: rem(150);
+    height: rem(150);
+    @include mq(md){
+        top: rem(-120);
+        left: calc(50% - min(50%, rem(950)));
+        width: rem(500);
+        height: rem(300);
+    }
+}
+
 
 .strengths__inner{
     max-width: $max-width;

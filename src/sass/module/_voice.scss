@@ -1,60 +1,65 @@
 @use "global" as *;
 
 .voice{
-    padding: rem(100) 0;
+    padding: rem(100) 0 rem(150);
     background-image: url(../images/common/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @include mq(md){
+        padding: rem(100) 0 rem(280); 
+    }
 }
 
 .voice__inner{
     max-width: $max-width;
 }
 
-.voice-teacher__flex{
-    margin-top: rem(80);
+.voice-bg__first{
+    position: relative;
+}
+
+.voice-bg__first::before {
+    background-image: url(../images/common/footprints2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(-1240);
+    right: calc(50% - min(48%, rem(300)));
+    width: rem(82);
+    height: rem(82);
     @include mq(md){
-        margin-top: rem(150);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        bottom: rem(-960);
+        right: calc(50% - min(50%, rem(850)));
+        width: rem(170);
+        height: rem(170);
     }
 }
 
-.voice-teacher__img{
-    @include mq(md){
-        width: 45%;
-    }
+
+.voice-bg__second{
+    position: relative;
 }
 
-.voice-teacher__img img{
-    width: rem(500);
-    margin: 0 auto;
+.voice-bg__second::before {
+    background-image: url(../images/common/footprints1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: rem(-1300);
+    right: calc(50% - min(48%, rem(300)));
+    margin-right: rem(40);
+    width: rem(60);
+    height: rem(60);
     @include mq(md){
-        width: 100%;;
+        bottom: rem(-1150);
+        right: calc(50% - min(48%, rem(820)));
+        margin-right: rem(50);
+        width: rem(120);
+        height: rem(162);
     }
-}
-
-.voice-teacher__content{
-    margin-top: rem(24);
-    @include mq(md){
-        margin-top: rem(0);
-        width: 48%;
-    }
-}
-
-.voice-teacher__text{
-    margin-top: rem(8);
-    font-size: rem(16);
-    font-weight: $regular;
-    line-height: calc(32/16);
-    letter-spacing: 0.05em;
-    @include mq(md){
-        font-size: rem(20);
-    }
-}
-
-.voice-teacher__text + .voice-teacher__text{
-    margin-top: rem(20);
 }

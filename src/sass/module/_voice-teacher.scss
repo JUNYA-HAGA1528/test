@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.voice-teacher__flex{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: rem(150);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.voice-teacher__img{
+    @include mq(md){
+        width: 45%;
+    }
+}
+
+.voice-teacher__img img{
+    width: rem(500);
+    margin: 0 auto;
+    @include mq(md){
+        width: rem(600);
+    }
+}
+
+.voice-teacher__content{
+    margin-top: rem(24);
+    @include mq(md){
+        margin-top: rem(0);
+        width: 48%;
+    }
+}
+
+.voice-teacher__text{
+    margin-top: rem(8);
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: calc(32/16);
+    letter-spacing: 0.05em;
+    @include mq(md){
+        font-size: rem(20);
+    }
+}
+
+.voice-teacher__text + .voice-teacher__text{
+    margin-top: rem(20);
+}

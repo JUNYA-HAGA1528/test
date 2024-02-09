@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.teacher-scenery{
+    position: relative;
+}
+
+.teacher-scenery__text{
+    font-size: rem(22);
+	font-weight: 900;
+    font-family: $second-font-family;
+	line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-align: center;
+    @include mq(md){
+        font-size: rem(32);
+        text-align: left;
+    }
+}
+
+.teacher-scenery__list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(10);
+    margin-top: rem(20);
+    @include mq(md){
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(15);
+    }
+}
+
+.teacher-scenery__img img{
+    aspect-ratio: 345/280;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
