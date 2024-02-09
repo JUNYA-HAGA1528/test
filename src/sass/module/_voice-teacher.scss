@@ -38,9 +38,6 @@
     font-weight: $regular;
     line-height: calc(32/16);
     letter-spacing: 0.05em;
-    @include mq(md){
-        font-size: rem(20);
-    }
 }
 
 .voice-teacher__text + .voice-teacher__text{

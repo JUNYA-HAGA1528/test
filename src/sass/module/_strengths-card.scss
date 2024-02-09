@@ -15,7 +15,7 @@
 	line-height: 1.5;
     letter-spacing: 0.08em;
     @include mq(md){
-        font-size: rem(58);
+        font-size: rem(50);
         transform: rotate(180deg); /* 下から上に縦方向に配置 */
         writing-mode: vertical-rl; /* オプション: 縦書きモードを適用 */
         letter-spacing: 0.45em;
@@ -42,8 +42,8 @@
     height: 100%;
     object-fit: cover;
     @include mq(md){
-        aspect-ratio: 540/440;
-        height: rem(440);
+        aspect-ratio: 540/400;
+        height: rem(400);
     }
 }
 
@@ -83,7 +83,7 @@
     line-height: calc(32/16);
     @include mq(md){
         margin-top: 0;
-        font-size: rem(20);
+        white-space: nowrap;
     }
 }
 

@@ -23,7 +23,7 @@
     height: rem(150);
     @include mq(md){
         top: rem(-120);
-        left: calc(50% - min(50%, rem(950)));
+        left: calc(50% - min(50%, rem(800)));
         width: rem(500);
         height: rem(300);
     }
