@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.strengths-cards__item + .strengths-cards__item{
+    margin-top: rem(60);
+    @include mq(md){
+        margin-top: rem(80);
+    }
+}

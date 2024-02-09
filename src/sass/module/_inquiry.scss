@@ -11,11 +11,18 @@
     background-size: contain;
     position: absolute;
     content: "";
-    top: rem(-150);
-    right: calc(50% - min(48%, rem(540)));
+    top: rem(-160);
+    right: calc(50% - min(48%, rem(300)));
     width: rem(71);
     /* height指定しないと表示されないので、ここは指定する */
     height: rem(162);
+    @include mq(md){
+        top: rem(-280);
+        right: calc(50% - min(48%, rem(640)));
+        width: rem(71);
+        /* height指定しないと表示されないので、ここは指定する */
+        height: rem(162);
+    }
 }
 
 .inquiry__contact{
