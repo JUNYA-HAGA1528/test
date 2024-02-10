@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.design-right{
+    position: relative;
+    padding-top: rem(80);
+    @include mq(md){
+        padding-top: rem(180);
+    }
+}
+
+.design-right__number{
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: rem(190);
+    right: calc(50% - min(50%, rem(600)));
+    width: rem(150);
+    height: rem(150);
+    background: $black;
+    text-align: center;
+    color: $white;
+    font-family: $second-font-family;
+    font-size: rem(65);
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    padding-top: rem(30);
+    z-index: 2;
+    @include mq(md){
+        display: block;
+    }
+}

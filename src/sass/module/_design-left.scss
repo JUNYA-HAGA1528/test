@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.design-left{
+    position: relative;
+    padding-top: rem(80);
+    @include mq(md){
+        padding-top: rem(180);
+    }
+}
+
+.design__bg{
+    position: relative;
+}
+
+.design__bg::before {
+    background-image: url(../images/common/footprints1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(10);
+    left: calc(50% - min(48%, rem(280)));
+    width: rem(60);
+    height: rem(60);
+    @include mq(md){
+        top: rem(0);
+        left: calc(50% - min(50%, rem(650)));
+        width: rem(120);
+        height: rem(162);
+    }
+}
+
+.design-left__number{
+    display: none;
+    position: absolute;
+    margin: auto;
+    top: rem(190);
+    left: calc(50% - min(50%, rem(600)));
+    width: rem(150);
+    height: rem(150);
+    background: $black;
+    text-align: center;
+    color: $white;
+    font-family: $second-font-family;
+    font-size: rem(65);
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    padding-top: rem(30);
+    z-index: 2;
+    @include mq(md){
+        display: block;
+    }
+}
