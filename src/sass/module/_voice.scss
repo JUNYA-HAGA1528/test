@@ -26,7 +26,7 @@
     background-size: contain;
     position: absolute;
     content: "";
-    bottom: rem(-1240);
+    bottom: rem(-1140);
     right: calc(50% - min(48%, rem(300)));
     width: rem(82);
     height: rem(82);
@@ -35,6 +35,13 @@
         right: calc(50% - min(50%, rem(700)));
         width: rem(170);
         height: rem(170);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .voice-bg__first::before{
+        bottom: rem(-1200);
+
     }
 }
 
@@ -50,7 +57,7 @@
     background-size: contain;
     position: absolute;
     content: "";
-    bottom: rem(-1300);
+    bottom: rem(-1200);
     right: calc(50% - min(48%, rem(300)));
     margin-right: rem(40);
     width: rem(60);
@@ -61,5 +68,12 @@
         margin-right: rem(70);
         width: rem(120);
         height: rem(162);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .voice-bg__second::before{
+        bottom: rem(-1270);
+
     }
 }

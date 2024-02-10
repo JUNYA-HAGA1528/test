@@ -15,7 +15,7 @@
 	line-height: 1.5;
     letter-spacing: 0.08em;
     @include mq(md){
-        font-size: rem(50);
+        font-size: rem(44);
         transform: rotate(180deg); /* 下から上に縦方向に配置 */
         writing-mode: vertical-rl; /* オプション: 縦書きモードを適用 */
         letter-spacing: 0.45em;
@@ -23,17 +23,15 @@
     }
 }
 
-.strengths-card__img {
-    filter: brightness(0.5);
+.strengths-card__figure{
     position: relative;
     @include mq(md){
         width: 45%;
     }
 }
 
-.strengths-card__img:hover {
-    filter: brightness(1);
-    transition: 0.3s;
+.strengths-card__img{
+    filter: brightness(0.5);
 }
 
 .strengths-card__img img{
@@ -42,8 +40,8 @@
     height: 100%;
     object-fit: cover;
     @include mq(md){
-        aspect-ratio: 540/400;
-        height: rem(400);
+        aspect-ratio: 540/350;
+        height: rem(350);
     }
 }
 
@@ -54,7 +52,8 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    text-shadow: rem(3) rem(3) #bbb;
+    color: $white;
+    text-shadow: rem(1.5) rem(1.5) #bbb;
     font-size: rem(22);
 	font-weight: 900;
     font-family: $second-font-family;
@@ -62,7 +61,8 @@
     letter-spacing: 0.08em;
     white-space: nowrap;
     @include mq(md){
-        font-size: rem(40);
+        text-shadow: rem(3) rem(3) #bbb;
+        font-size: rem(32);
         writing-mode: vertical-rl;
     }
 }
