@@ -1,6 +1,29 @@
 @use "global" as *;
 
-.design__content{
+.design{
+    position: relative;
+}
+
+.design::before{
+    background-image: url(../images/common/tree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(-160);
+    right: calc(50% - min(48%, rem(300)));
+    width: rem(150);
+    height: rem(150);
+    @include mq(md){
+        top: rem(-100);
+        right: calc(50% - min(50%, rem(800)));
+        width: rem(300);
+        height: rem(300);
+    }
+}
+
+.design__contents{
     @include mq(md){
         margin-top: rem(100);
     }
