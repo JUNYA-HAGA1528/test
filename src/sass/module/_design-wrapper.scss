@@ -20,15 +20,9 @@
     text-underline-offset: rem(6);
     padding-bottom: rem(20);
     @include mq(md){
+        font-size: rem(24);
         margin-left: rem(135);
         padding-top: rem(7);
-    }
-}
-
-.design-wrapper__subtitle{
-    font-size: rem(14);
-    @include mq(md){
-        margin-left: rem(20);
     }
 }
 
@@ -38,7 +32,13 @@
         text-align: right;
         margin-right: rem(135);
     }
+}
 
+.design-wrapper__subtitle{
+    font-size: rem(14);
+    @include mq(md){
+        margin-left: rem(20);
+    }
 }
 
 .design-wrapper__flex{
@@ -74,12 +74,13 @@
 
 .design-wrapper__text{
     padding-top: rem(10);
-    font-size: rem(20);
+    font-size: rem(16);
     font-weight: $bold;
     text-align: center;
     line-height: 1.2;
     letter-spacing: 0.05em;
     @include mq(md){
+        font-size: rem(20);
         padding-top: rem(20);
         line-height: 1.5;
     }

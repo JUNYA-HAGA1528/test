@@ -10,25 +10,25 @@
     }
 }
 
-.test{
+.voice-teacher__img img{
+    width: rem(300);
+    margin: 0 auto;
     @include mq(md){
-        width: 45%;
+        width: rem(450);
     }
 }
 
-.voice-teacher__img img{
-    width: rem(500);
-    margin: 0 auto;
+.voice-teacher__img{
     @include mq(md){
-        width: rem(600);
+        width: 42%;
     }
 }
 
 .voice-teacher__content{
-    margin-top: rem(24);
+    margin-top: rem(40);
     @include mq(md){
         margin-top: rem(0);
-        width: 48%;
+        width: 50%;
     }
 }
 
