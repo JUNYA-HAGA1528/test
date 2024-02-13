@@ -103,3 +103,353 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+
+/*---.design-wrapper__img--first---*/
+.design-wrapper__img--first{
+    position: relative;
+}
+
+.design-wrapper__img--first::before{
+    background-image: url(../images/common/arrow_first.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 50%;
+    right: calc(50% - min(50%, -20%));
+    width: rem(100);
+    height: rem(100);
+@include mq(md){
+        bottom: 40%;
+        right: calc(50% - min(50%, -15%));
+        width: rem(150);
+        height: rem(130);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--first::before{
+        bottom: 45%;
+        right: calc(50% - min(50%, -20%));
+        width: rem(100);
+        height: rem(100);
+        }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--first::before{
+        bottom: 37%;
+        right: calc(50% - min(50%, -18%));
+        width: rem(100);
+        height: rem(100);
+        }
+}
+
+
+
+/*---.design-wrapper__img--second---*/
+.design-wrapper__img--second{
+    position: relative;
+}
+
+.design-wrapper__img--second::before{
+    background-image: url(../images/common/arrow_second.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 40%;
+    right: calc(50% - min(50%, -20%));
+    width: rem(100);
+    height: rem(100);
+@include mq(md){
+        top: rem(-70);
+        right: calc(50% - min(50%, rem(-70)));
+        width: rem(150);
+        height: rem(130);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--second::before{
+        bottom: 40%;
+        right: calc(50% - min(50%, -18%));
+        width: rem(100);
+        height: rem(100);
+        }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--second::before{
+        bottom: 60%;
+        right: calc(50% - min(50%, -18%));
+        width: rem(80);
+        height: rem(80);
+        }
+}
+
+
+/*---.design-wrapper__img--three---*/
+.design-wrapper__img--three{
+    position: relative;
+}
+
+.design-wrapper__img--three::before{
+    background-image: url(../images/common/arrow_three.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: -7%;
+    left: calc(50% - min(50%, -3%));
+    width: 40%;
+    height: 40%;
+@include mq(md){
+        bottom: rem(-20);
+        left: calc(50% - min(50%, -7%));
+        width: rem(150);
+        height: rem(140);
+    }
+}
+
+
+
+/*---.design-wrapper__img--force---*/
+.design-wrapper__img--force{
+    position: relative;
+}
+
+.design-wrapper__img--force::before{
+    background-image: url(../images/common/arrow_first.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: -70%;
+    right: calc(50% - min(50%, -20%));
+    width: rem(100);
+    height: rem(100);
+@include mq(md){
+        top: -60%;
+        right: calc(50% - min(50%, -15%));
+        width: rem(150);
+        height: rem(130);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--force::before{
+        top: -70%;
+        right: calc(50% - min(50%, -17%));
+        }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--force::before{
+        top: -60%;
+        right: calc(50% - min(50%, -20%));
+        width: rem(80);
+        height: rem(80);
+    }
+}
+
+
+
+/*---.design-wrapper__img--five---*/
+.design-wrapper__img--five{
+    position: relative;
+}
+
+.design-wrapper__img--five::before{
+    background-image: url(../images/common/arrow_five.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: -3%;
+    left: calc(50% - min(50%, 12%));
+    width: rem(150);
+    height: rem(140);
+@include mq(md){
+       bottom: -3%;
+        left: calc(50% - min(50%, 10%));
+        width: rem(150);
+        height: rem(140);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--five::before{
+        bottom: -1%;
+        left: calc(50% - min(50%, 12%));
+        width: rem(130);
+        height: rem(130);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--five::before{
+        bottom: -3%;
+        left: calc(50% - min(50%, 10%));
+        width: rem(100);
+        height: rem(110);
+    }
+}
+
+
+
+/*---.design-wrapper__img--six---*/
+.design-wrapper__img--six{
+    position: relative;
+}
+
+.design-wrapper__img--six::before{
+    background-image: url(../images/common/arrow_six.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: 35%;
+    left: calc(50% - min(50%, 3%));
+    width: rem(250);
+    height: rem(250);
+@include mq(md){
+        top: 33%;
+        right: calc(50% - min(50%, 70%));
+        width: rem(200);
+        height: rem(200);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--six::before{
+        top: 31%;
+        left: calc(50% - min(50%, 0%));
+        width: rem(220);
+        height: rem(220);
+            }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--six::before{
+        top: 31%;
+        left: calc(50% - min(50%, 5%));
+        width: rem(200);
+        height: rem(200);
+        }
+}
+
+
+
+
+/*---.design-wrapper__img--seven---*/
+.design-wrapper__img--seven{
+    position: relative;
+}
+
+.design-wrapper__img--seven::before{
+    background-image: url(../images/common/arrow_seven.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 80%;
+    left: calc(50% - min(50%, 35%));
+    width: rem(280);
+    height: rem(280);
+@include mq(md){
+        top: -110%;
+        left: calc(50% - min(50%, 38%));
+        width: rem(220);
+        height: rem(220);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .design-wrapper__img--seven::before{
+        bottom: 100%;
+        left: calc(50% - min(50%, 35%));
+        width: rem(250);
+        height: rem(250);
+        }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--seven::before{
+        bottom: 85%;
+        left: calc(50% - min(50%, 35%));
+        width: rem(230);
+        height: rem(230);
+        }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--seven::before{
+        bottom: 80%;
+        left: calc(50% - min(50%, 40%));
+        width: rem(210);
+        height: rem(210);
+        }
+}
+
+
+
+/*---.design-wrapper__img--eight---*/
+.design-wrapper__img--eight{
+    position: relative;
+}
+
+.design-wrapper__img--eight::before{
+    background-image: url(../images/common/arrow_eight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    bottom: 100%;
+    left: calc(50% - min(50%, 50%));
+    width: rem(200);
+    height: rem(200);
+@include mq(md){
+        top: -85%;
+        left: calc(50% - min(50%, 60%));
+        width: rem(180);
+        height: rem(180);
+    }
+}
+
+@media screen and (max-width: 500px){
+    .design-wrapper__img--eight::before{
+        bottom: 90%;
+        left: calc(50% - min(50%, 80%));
+        width: rem(200);
+        height: rem(200);
+        }
+}
+
+@media screen and (max-width: 450px){
+    .design-wrapper__img--eight::before{
+        bottom: 80%;
+        left: calc(50% - min(50%, 80%));
+        width: rem(180);
+        height: rem(180);
+        }
+}
+
+@media screen and (max-width: 400px){
+    .design-wrapper__img--eight::before{
+        bottom: 90%;
+        left: calc(50% - min(50%, 50%));
+        width: rem(170);
+        height: rem(170);
+        }
+}
